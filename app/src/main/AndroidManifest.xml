@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.Constructo">
+
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Constructo"
+        tools:replace="android:label"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+
+        <activity android:name="com.example.Constructo.SearchProductsActivity"></activity>
+        <activity android:name="com.example.Constructo.AdminUserProductsActivity" />
+        <activity android:name="com.example.Constructo.AdminNewOrdersActivity" />
+        <activity android:name="com.example.Constructo.ConfirmFinalOrderActivity" />
+        <activity android:name="com.example.Constructo.CartActivity" />
+        <activity android:name="com.example.Constructo.ProductDetailsActivity" />
+        <activity android:name="com.example.Constructo.SettinsActivity" />
+        <activity
+            android:name="com.theartofdev.edmodo.cropper.CropImageActivity"
+            android:theme="@style/Base.Theme.AppCompat" />
+        <activity
+            android:name="com.example.Constructo.HomeActivity"
+            android:label="@string/title_activity_home"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.example.Constructo.ACategoryActivity" />
+        <activity android:name=".AdminCategoryActiviti" />
+        <activity android:name=".Prevalent.AdminCategoryActivity" />
+        <activity
+            android:name=".TestActivity"
+            android:label="@string/title_activity_test"
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name="com.example.Constructo.AdminCategoryActivity" />
+        <activity android:name="com.example.Constructo.AdminAddNewProductActivity" />
+        <activity android:name="com.example.Constructo.RegisterActivity" />
+        <activity android:name="com.example.Constructo.LoginActivity" />
+        <activity android:name="com.example.Constructo.MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
